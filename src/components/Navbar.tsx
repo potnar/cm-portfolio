@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { name: "O mnie", href: "/#about" },
-  { name: "StrideStack", href: "/projects/stridestack" },
   { name: "Projekty", href: "/#projects" },
   { name: "Umiejętności", href: "/#skills" },
   { name: "Kontakt", href: "/#contact" },
@@ -105,7 +104,7 @@ export function Navbar() {
               ))}
               <div className="flex gap-6 pt-4 border-t border-white/10">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/potnar"
                   target="_blank"
                   className="cursor-pointer"
                 >
@@ -115,7 +114,7 @@ export function Navbar() {
                   />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/mikołaj-cholewa-4b909573/"
                   target="_blank"
                   className="cursor-pointer"
                 >
