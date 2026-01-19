@@ -35,8 +35,8 @@ const projects = [
   {
     title: "Crowder.pro",
     description:
-      "Platforma crowdfundingowa z systemem płatności i zarządzaniem kampaniami.",
-    tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      "Frontend platformy crowdfundingowej z integracją płatności Tpay i obsługą kampanii.",
+    tags: ["React", "Material UI", "Tpay", "JWT", "React Router"],
     link: "/projects/crowder",
     icon: <Layout className="w-6 h-6" />,
   },
@@ -59,6 +59,8 @@ const skills = [
   "Framer Motion",
   "NestJS",
   "PostgreSQL",
+  "Unreal Engine",
+  "Automatyka",
 ];
 
 export default function Home() {
