@@ -130,9 +130,13 @@ export default function StrideStackPage() {
               >
                 <Globe className="w-4 h-4" /> Zobacz Live Demo
               </a>
-              <button className="px-6 py-3 bg-white/10 text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer">
+              <a
+                href="https://github.com/potnar"
+                target="_blank"
+                className="px-6 py-3 bg-white/10 text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer"
+              >
                 <Code className="w-4 h-4" /> Przejrzyj Kod
-              </button>
+              </a>
             </div>
           </div>
         </motion.div>

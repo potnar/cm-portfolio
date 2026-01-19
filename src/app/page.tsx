@@ -223,7 +223,11 @@ export default function Home() {
         <div className="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-zinc-500 text-sm font-medium">
           <p>© 2026 CM Portfolio. Wszelkie prawa zastrzeżone.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">
+            <a
+              href="https://github.com/potnar"
+              target="_blank"
+              className="hover:text-white transition-colors cursor-pointer"
+            >
               GitHub
             </a>
             <a href="#" className="hover:text-white transition-colors">

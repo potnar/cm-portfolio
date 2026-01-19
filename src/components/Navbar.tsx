@@ -58,14 +58,14 @@ export function Navbar() {
           ))}
           <div className="flex items-center gap-4 border-l border-white/10 pl-8 ml-2">
             <a
-              href="https://github.com"
+              href="https://github.com/potnar"
               target="_blank"
-              className="text-zinc-400 hover:text-white transition-colors"
+              className="text-zinc-400 hover:text-white transition-colors cursor-pointer"
             >
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/mikołaj-cholewa-4b909573/"
               target="_blank"
               className="text-zinc-400 hover:text-white transition-colors"
             >
