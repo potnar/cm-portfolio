@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
+  Database,
+  Link as LinkIcon,
   Activity,
   ArrowRight,
   Code,
@@ -23,6 +25,21 @@ const projects = [
     tags: ["Next.js", "Prisma", "PostgreSQL", "PWA"],
     link: "/projects/stridestack",
     icon: <Activity className="w-6 h-6" />,
+  },
+  {
+    title: "Data Janitor",
+    description:
+      "Narzędzie do czyszczenia i transformacji danych CSV/Excel z automatycznymi regułami.",
+    tags: ["React", "TypeScript", "File Parsing", "Utils"],
+    link: "/projects/data-janitor",
+    icon: <Database className="w-6 h-6" />,
+  },
+  {
+    title: "UTM Architect",
+    description: "Kreator i walidator linków śledzących kampanie marketingowe.",
+    tags: ["React", "Vite", "Analytics", "UX/UI"],
+    link: "/projects/utm-architect",
+    icon: <LinkIcon className="w-6 h-6" />,
   },
   {
     title: "NestJS/Next.js Demo",
