@@ -3,18 +3,69 @@
 @source "../app";
 
 @theme {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Base */
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-foreground-hover: oklch(92% 0.004 286.32);
+
+  /* Text */
+  --color-muted: oklch(70.5% 0.015 286.067);
+  --color-subtle: oklch(55.2% 0.016 285.938);
+
+  /* Surfaces */
+  --color-surface: rgb(255 255 255 / 0.05);
+  --color-surface-hover: rgb(255 255 255 / 0.07);
+  --color-surface-strong: rgb(255 255 255 / 0.1);
+  --color-surface-solid: oklch(21% 0.006 285.885);
+
+  /* Borders */
+  --color-border: rgb(255 255 255 / 0.1);
+  --color-border-subtle: rgb(255 255 255 / 0.05);
+  --color-border-strong: rgb(255 255 255 / 0.2);
+
+  /* Brand */
+  --color-primary: oklch(78.9% 0.154 211.53);
+  --color-primary-strong: oklch(71.5% 0.143 215.221);
+  --color-secondary: oklch(71.4% 0.203 305.504);
+  --color-secondary-strong: oklch(62.7% 0.265 303.9);
+  --color-secondary-deep: oklch(55.8% 0.288 302.321);
+  --color-tertiary: oklch(76.5% 0.177 163.223);
+
+  /* Layout: max widths include the 1.5rem gutter on each side */
+  --container-wide: 83rem;
+  --container-narrow: 56rem;
 }
 
-:root {
-  --background: #000000;
-  --foreground: #ffffff;
+/* Accent is scoped: set data-accent on any wrapper to recolor *-accent utilities inside it. */
+@theme inline {
+  --color-accent: var(--accent);
+}
+
+:root,
+[data-accent="cyan"] {
+  --accent: oklch(78.9% 0.154 211.53);
+}
+
+[data-accent="blue"] {
+  --accent: oklch(70.7% 0.165 254.624);
+}
+
+[data-accent="emerald"] {
+  --accent: oklch(76.5% 0.177 163.223);
+}
+
+[data-accent="orange"] {
+  --accent: oklch(75% 0.183 55.934);
+}
+
+[data-accent="purple"] {
+  --accent: oklch(71.4% 0.203 305.504);
 }
 
 body {
-  background-color: var(--background);
-  color: var(--foreground);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
 }
