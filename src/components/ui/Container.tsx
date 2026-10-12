@@ -15,6 +15,9 @@ export function Container({
   ...props
 }: ContainerProps) {
   return (
-    <div {...props} className={cn("mx-auto px-6", sizes[size], className)} />
+    <div
+      {...props}
+      className={cn("mx-auto px-gutter", sizes[size], className)}
+    />
   );
 }

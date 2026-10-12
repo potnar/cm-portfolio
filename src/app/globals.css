@@ -34,7 +34,62 @@
   --color-secondary-deep: oklch(55.8% 0.288 302.321);
   --color-tertiary: oklch(76.5% 0.177 163.223);
 
-  /* Layout: max widths include the 1.5rem gutter on each side */
+  /* Type: text-{name} sets size, line height, tracking and weight together.
+     Body copy stays on the default scale (text-xs, text-sm, text-base, text-lg). */
+  --text-display: 3rem; /* home hero; 6rem from md */
+  --text-display--line-height: 1.25;
+  --text-display--letter-spacing: -0.05em;
+  --text-display--font-weight: 900;
+
+  --text-title: 3rem; /* page title; 4.5rem from md */
+  --text-title--line-height: 1;
+  --text-title--letter-spacing: -0.05em;
+  --text-title--font-weight: 900;
+
+  --text-heading-xl: 2.25rem; /* section title; 3rem from md */
+  --text-heading-xl--line-height: calc(2.5 / 2.25);
+  --text-heading-xl--letter-spacing: -0.025em;
+  --text-heading-xl--font-weight: 900;
+
+  --text-heading-lg: 1.875rem;
+  --text-heading-lg--line-height: calc(2.25 / 1.875);
+  --text-heading-lg--font-weight: 700;
+
+  --text-heading-md: 1.5rem;
+  --text-heading-md--line-height: calc(2 / 1.5);
+  --text-heading-md--font-weight: 700;
+
+  --text-heading-sm: 1.25rem;
+  --text-heading-sm--line-height: calc(1.75 / 1.25);
+  --text-heading-sm--font-weight: 700;
+
+  --text-lead: 1.25rem;
+  --text-lead--line-height: 1.625;
+
+  --text-eyebrow: 0.875rem; /* pair with uppercase */
+  --text-eyebrow--line-height: calc(1.25 / 0.875);
+  --text-eyebrow--letter-spacing: 0.1em;
+  --text-eyebrow--font-weight: 700;
+
+  --text-label: 0.625rem; /* pair with uppercase */
+  --text-label--line-height: 1.5;
+  --text-label--letter-spacing: 0.05em;
+  --text-label--font-weight: 700;
+
+  /* Radius: the only steps in use; pills and dots use rounded-full */
+  --radius-*: initial;
+  --radius-sm: 0.25rem; /* tags */
+  --radius-lg: 0.5rem; /* compact buttons, logo mark */
+  --radius-xl: 0.75rem; /* small cards */
+  --radius-2xl: 1rem; /* cards, icon badges, chips */
+  --radius-3xl: 1.5rem; /* large cards, panels */
+
+  /* Spacing: layout rhythm on top of the numeric scale */
+  --spacing-gutter: 1.5rem; /* horizontal page padding */
+  --spacing-section: 6rem;
+  --spacing-section-sm: 5rem;
+
+  /* Layout: max widths include the gutter on each side */
   --container-wide: 83rem;
   --container-narrow: 56rem;
 }
@@ -63,6 +118,16 @@
 
 [data-accent="purple"] {
   --accent: oklch(71.4% 0.203 305.504);
+}
+
+/* The largest type styles step up from the md breakpoint. */
+:root {
+  @variant md {
+    --text-display: 6rem;
+    --text-title: 4.5rem;
+    --text-heading-xl: 3rem;
+    --text-heading-xl--line-height: 1;
+  }
 }
 
 body {

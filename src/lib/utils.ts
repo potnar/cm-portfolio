@@ -3,7 +3,23 @@ import { extendTailwindMerge } from "tailwind-merge";
 
 // Theme keys from globals.css that tailwind-merge can't infer on its own.
 const twMerge = extendTailwindMerge({
-  extend: { theme: { container: ["wide", "narrow"] } },
+  extend: {
+    theme: {
+      container: ["wide", "narrow"],
+      spacing: ["gutter", "section", "section-sm"],
+      text: [
+        "display",
+        "title",
+        "heading-xl",
+        "heading-lg",
+        "heading-md",
+        "heading-sm",
+        "lead",
+        "eyebrow",
+        "label",
+      ],
+    },
+  },
 });
 
 export function cn(...inputs: ClassValue[]) {
