@@ -12,7 +12,7 @@ export default function NestJSDemoPage() {
       <Navbar />
       <Scene3D />
 
-      <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
+      <main className="relative z-10 max-w-narrow mx-auto px-gutter py-section-sm mt-20">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
@@ -30,21 +30,21 @@ export default function NestJSDemoPage() {
             <div className="w-16 h-16 bg-emerald-500/20 rounded-2xl flex items-center justify-center">
               <Server className="w-8 h-8 text-emerald-400" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter">
+            <h1 className="text-title">
               NESTJS<span className="text-emerald-400">/NEXT.JS</span> DEMO
             </h1>
           </div>
 
-          <p className="text-xl text-muted mb-12 leading-relaxed">
+          <p className="text-lead text-muted mb-12">
             Kompleksowa demonstracja architektury Fullstack, łącząca wydajność
             Next.js po stronie klienta z solidnością NestJS po stronie serwera.
             Projekt prezentuje najlepsze praktyki w budowaniu nowoczesnych
             aplikacji webowych.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-section-sm">
             <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-emerald-500/30 transition-colors">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <h3 className="text-heading-sm mb-4 flex items-center gap-2">
                 <Globe className="text-emerald-400" /> Frontend
               </h3>
               <p className="text-muted text-sm">
@@ -53,7 +53,7 @@ export default function NestJSDemoPage() {
               </p>
             </div>
             <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-emerald-500/30 transition-colors">
-              <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <h3 className="text-heading-sm mb-4 flex items-center gap-2">
                 <Cpu className="text-emerald-400" /> Backend
               </h3>
               <p className="text-muted text-sm">
@@ -64,7 +64,7 @@ export default function NestJSDemoPage() {
           </div>
 
           <div className="space-y-8">
-            <h2 className="text-3xl font-bold">Standardy i Jakość</h2>
+            <h2 className="text-heading-lg">Standardy i Jakość</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
                 "Pełna typizacja end-to-end",
@@ -84,8 +84,8 @@ export default function NestJSDemoPage() {
             </div>
           </div>
 
-          <div className="mt-24 p-12 bg-gradient-to-br from-emerald-500/10 to-transparent rounded-3xl border border-emerald-500/20">
-            <h3 className="text-2xl font-bold mb-4">Kod źródłowy</h3>
+          <div className="mt-section p-12 bg-gradient-to-br from-emerald-500/10 to-transparent rounded-3xl border border-emerald-500/20">
+            <h3 className="text-heading-md mb-4">Kod źródłowy</h3>
             <p className="text-muted mb-8 max-w-lg">
               Architektura została zaprojektowana tak, aby umożliwić łatwą
               rozbudowę o mikrousługi i wspierać rozwój w dużych zespołach

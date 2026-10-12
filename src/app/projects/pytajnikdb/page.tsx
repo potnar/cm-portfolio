@@ -19,7 +19,7 @@ export default function PytajnikDBPage() {
       <Navbar />
       <Scene3D />
 
-      <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
+      <main className="relative z-10 max-w-narrow mx-auto px-gutter py-section-sm mt-20">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
@@ -37,19 +37,19 @@ export default function PytajnikDBPage() {
             <div className="w-16 h-16 bg-purple-500/20 rounded-2xl flex items-center justify-center">
               <Database className="w-8 h-8 text-purple-400" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter">
+            <h1 className="text-title">
               PYTAJNIK<span className="text-purple-400">DB</span>
             </h1>
           </div>
 
-          <p className="text-xl text-muted mb-12 leading-relaxed">
+          <p className="text-lead text-muted mb-12">
             Interaktywna baza danych zaprojektowana dla potrzeb szybkiego
             wyszukiwania i filtrowania ogromnych zbiorów informacji. System
             charakteryzuje się intuicyjnym interfejsem "instant-search" oraz
             potężnymi filtrami.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-section-sm">
             <div className="p-8 rounded-2xl bg-surface border border-border">
               <div className="flex items-center gap-3 mb-4 text-purple-400">
                 <Search className="w-5 h-5" />
@@ -72,7 +72,7 @@ export default function PytajnikDBPage() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-2 pt-2 mb-20">
+          <div className="flex flex-wrap gap-2 pt-2 mb-section-sm">
             {[
               "React",
               "Next.js",
@@ -91,7 +91,7 @@ export default function PytajnikDBPage() {
           </div>
 
           <div className="space-y-12">
-            <h2 className="text-3xl font-bold flex items-center gap-3">
+            <h2 className="text-heading-lg flex items-center gap-3">
               <Code2 className="text-muted" /> Architektura
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -125,8 +125,8 @@ export default function PytajnikDBPage() {
             </div>
           </div>
 
-          <div className="mt-24 p-12 border-2 border-dashed border-border rounded-3xl text-center">
-            <h3 className="text-xl font-bold mb-4 italic">
+          <div className="mt-section p-12 border-2 border-dashed border-border rounded-3xl text-center">
+            <h3 className="text-heading-sm mb-4 italic">
               Certyfikowana Wydajność
             </h3>
             <p className="text-subtle text-sm max-w-md mx-auto">

@@ -21,7 +21,7 @@ export default function DataJanitorPage() {
       <Navbar />
       <Scene3D />
 
-      <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
+      <main className="relative z-10 max-w-narrow mx-auto px-gutter py-section-sm mt-20">
         <Link
           href="/#projects"
           className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
@@ -39,18 +39,18 @@ export default function DataJanitorPage() {
             <div className="w-16 h-16 bg-cyan-500/20 rounded-2xl flex items-center justify-center">
               <Database className="w-8 h-8 text-cyan-400" />
             </div>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tighter uppercase">
+            <h1 className="text-title uppercase">
               DATA<span className="text-cyan-400">JANITOR</span>
             </h1>
           </div>
 
-          <p className="text-xl text-muted mb-12 leading-relaxed">
+          <p className="text-lead text-muted mb-12">
             Inteligentne narzędzie do automatyzacji procesów czyszczenia i
             transformacji danych. Data Janitor zamienia chaos w uporządkowane
             informacje, oszczędzając godziny żmudnej pracy manualnej.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-section-sm">
             <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-cyan-500/30 transition-colors">
               <div className="flex items-center gap-3 mb-4 text-cyan-400">
                 <FileSpreadsheet className="w-5 h-5" />
@@ -73,8 +73,8 @@ export default function DataJanitorPage() {
             </div>
           </div>
 
-          <div className="space-y-12 mb-20">
-            <h2 className="text-3xl font-bold flex items-center gap-3">
+          <div className="space-y-12 mb-section-sm">
+            <h2 className="text-heading-lg flex items-center gap-3">
               <Settings className="text-yellow-400" /> Główne Funkcje
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -110,7 +110,7 @@ export default function DataJanitorPage() {
           </div>
 
           <div className="p-12 bg-gradient-to-br from-cyan-500/10 to-transparent rounded-3xl border border-cyan-500/20">
-            <h3 className="text-2xl font-bold mb-4 italic">Nowoczesny Stack</h3>
+            <h3 className="text-heading-md mb-4 italic">Nowoczesny Stack</h3>
             <p className="text-muted mb-8 max-w-lg">
               Aplikacja zbudowana w oparciu o najnowsze standardy webowe,
               gwarantująca szybkość działania i bezpieczeństwo przetwarzanych

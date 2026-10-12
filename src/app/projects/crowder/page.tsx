@@ -18,7 +18,7 @@ export default function CrowderPage() {
       <Navbar />
       <Scene3D />
 
-      <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
+      <main className="relative z-10 max-w-narrow mx-auto px-gutter py-section-sm mt-20">
         <Link
           href="/"
           className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
@@ -32,18 +32,18 @@ export default function CrowderPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
+          <h1 className="text-title mb-6">
             CROWDER<span className="text-cyan-400">.PRO</span>
           </h1>
-          <p className="text-xl text-muted mb-12 leading-relaxed">
+          <p className="text-lead text-muted mb-12">
             Nowoczesna platforma crowdfundingowa zaprojektowana z myślą o
             skalowalności i bezpieczeństwie. System umożliwia twórcom zbieranie
             funduszy, a inwestorom bezpieczne wspieranie projektów.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-section-sm">
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold flex items-center gap-3">
+              <h2 className="text-heading-md flex items-center gap-3">
                 <CheckCircle2 className="text-cyan-400" /> Kluczowe Funkcje
               </h2>
               <ul className="space-y-4">
@@ -62,8 +62,8 @@ export default function CrowderPage() {
               </ul>
             </div>
 
-            <div className="space-y-6 text-2xl font-bold border-l-2 border-border pl-10">
-              <h2 className="text-2xl font-bold flex items-center gap-3">
+            <div className="space-y-6 text-heading-md border-l-2 border-border pl-10">
+              <h2 className="text-heading-md flex items-center gap-3">
                 <ShieldCheck className="text-purple-400" /> Stos Technologiczny
               </h2>
               <div className="flex flex-wrap gap-2 pt-2">
@@ -86,12 +86,12 @@ export default function CrowderPage() {
             </div>
           </div>
 
-          <div className="p-12 rounded-3xl bg-surface-solid border border-border mb-20">
+          <div className="p-12 rounded-3xl bg-surface-solid border border-border mb-section-sm">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 bg-cyan-400/20 rounded-2xl flex items-center justify-center">
                 <Zap className="w-6 h-6 text-cyan-400" />
               </div>
-              <h3 className="text-3xl font-bold">Wyniki i Wdrożenie</h3>
+              <h3 className="text-heading-lg">Wyniki i Wdrożenie</h3>
             </div>
             <p className="text-muted mb-8 leading-relaxed">
               Projekt został zoptymalizowany pod kątem szybkości ładowania oraz

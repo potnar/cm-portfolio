@@ -94,7 +94,10 @@ export default function Home() {
       <Scene3D />
 
       {/* Hero Section / About Me */}
-      <section id="about" className="relative pt-32 pb-20 overflow-hidden">
+      <section
+        id="about"
+        className="relative pt-32 pb-section-sm overflow-hidden"
+      >
         <Container className="relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -107,7 +110,7 @@ export default function Home() {
               <span>Dostępny do nowych projektów</span>
             </div>
 
-            <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-tight">
+            <h1 className="text-display">
               KREUJĘ <br />
               <GradientText>CYFROWĄ PRZYSZŁOŚĆ</GradientText>
             </h1>
@@ -130,7 +133,7 @@ export default function Home() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 relative z-10">
+      <section id="projects" className="py-section relative z-10">
         <Container>
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <SectionHeading eyebrow="Portfolio" title="WYBRANE PROJEKTY" />
@@ -153,7 +156,7 @@ export default function Home() {
                   <IconBadge className="mb-6 group-hover:scale-110 transition-transform">
                     {project.icon}
                   </IconBadge>
-                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <h3 className="text-heading-sm mb-3">{project.title}</h3>
                   <p className="text-muted mb-6 text-sm leading-relaxed">
                     {project.description}
                   </p>
@@ -178,7 +181,7 @@ export default function Home() {
       {/* Skills Section */}
       <section
         id="skills"
-        className="py-24 bg-surface border-y border-border relative z-10"
+        className="py-section bg-surface border-y border-border relative z-10"
       >
         <Container className="overflow-hidden">
           <div className="flex flex-col items-center text-center mb-16">
@@ -210,12 +213,12 @@ export default function Home() {
       {/* Footer / Contact */}
       <footer
         id="contact"
-        className="py-20 relative z-10 border-t border-border"
+        className="py-section-sm relative z-10 border-t border-border"
       >
         <Container>
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="text-center md:text-left">
-              <h2 className="text-2xl font-bold mb-2">Gotowy na rozmowę?</h2>
+              <h2 className="text-heading-md mb-2">Gotowy na rozmowę?</h2>
               <div className="space-y-1">
                 <p className="text-muted italic">Mikołaj Cholewa</p>
                 <p className="text-muted">cholewamikolaj@gmail.com</p>
@@ -230,7 +233,7 @@ export default function Home() {
               Napisz do mnie
             </Button>
           </div>
-          <div className="mt-20 pt-8 border-t border-border-subtle flex flex-col md:flex-row justify-between items-center gap-4 text-subtle text-sm font-medium">
+          <div className="mt-section-sm pt-8 border-t border-border-subtle flex flex-col md:flex-row justify-between items-center gap-4 text-subtle text-sm font-medium">
             <p>© 2026 CM Portfolio. Wszelkie prawa zastrzeżone.</p>
             <div className="flex gap-6">
               <a
