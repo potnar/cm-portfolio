@@ -14,14 +14,14 @@ import Link from "next/link";
 
 export default function CrowderPage() {
   return (
-    <div className="relative min-h-screen bg-black text-white selection:bg-purple-500/30 font-sans mt-20">
+    <div className="relative min-h-screen bg-background text-foreground selection:bg-purple-500/30 font-sans mt-20">
       <Navbar />
       <Scene3D />
 
       <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Powrót do strony główne
@@ -35,7 +35,7 @@ export default function CrowderPage() {
           <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
             CROWDER<span className="text-cyan-400">.PRO</span>
           </h1>
-          <p className="text-xl text-zinc-400 mb-12 leading-relaxed">
+          <p className="text-xl text-muted mb-12 leading-relaxed">
             Nowoczesna platforma crowdfundingowa zaprojektowana z myślą o
             skalowalności i bezpieczeństwie. System umożliwia twórcom zbieranie
             funduszy, a inwestorom bezpieczne wspieranie projektów.
@@ -54,7 +54,7 @@ export default function CrowderPage() {
                   "Panel analityczny dla twórców",
                   "Automatyczne raporty i powiadomienia",
                 ].map((item) => (
-                  <li key={item} className="flex gap-3 text-zinc-400">
+                  <li key={item} className="flex gap-3 text-muted">
                     <div className="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2 shrink-0" />
                     {item}
                   </li>
@@ -62,7 +62,7 @@ export default function CrowderPage() {
               </ul>
             </div>
 
-            <div className="space-y-6 text-2xl font-bold border-l-2 border-white/10 pl-10">
+            <div className="space-y-6 text-2xl font-bold border-l-2 border-border pl-10">
               <h2 className="text-2xl font-bold flex items-center gap-3">
                 <ShieldCheck className="text-purple-400" /> Stos Technologiczny
               </h2>
@@ -77,7 +77,7 @@ export default function CrowderPage() {
                 ].map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-zinc-400"
+                    className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-bold text-muted"
                   >
                     {tech}
                   </span>
@@ -86,14 +86,14 @@ export default function CrowderPage() {
             </div>
           </div>
 
-          <div className="p-12 rounded-3xl bg-zinc-900 border border-white/10 mb-20">
+          <div className="p-12 rounded-3xl bg-surface-solid border border-border mb-20">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-12 h-12 bg-cyan-400/20 rounded-2xl flex items-center justify-center">
                 <Zap className="w-6 h-6 text-cyan-400" />
               </div>
               <h3 className="text-3xl font-bold">Wyniki i Wdrożenie</h3>
             </div>
-            <p className="text-zinc-400 mb-8 leading-relaxed">
+            <p className="text-muted mb-8 leading-relaxed">
               Projekt został zoptymalizowany pod kątem szybkości ładowania oraz
               konwersji. Dzięki zastosowaniu Next.js i Server Components, udało
               się osiągnąć świetne wyniki w Core Web Vitals, co bezpośrednio

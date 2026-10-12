@@ -8,14 +8,14 @@ import Link from "next/link";
 
 export default function NestJSDemoPage() {
   return (
-    <div className="relative min-h-screen bg-black text-white selection:bg-purple-500/30 font-sans mt-20">
+    <div className="relative min-h-screen bg-background text-foreground selection:bg-purple-500/30 font-sans mt-20">
       <Navbar />
       <Scene3D />
 
       <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Powrót do strony głównej
@@ -35,7 +35,7 @@ export default function NestJSDemoPage() {
             </h1>
           </div>
 
-          <p className="text-xl text-zinc-400 mb-12 leading-relaxed">
+          <p className="text-xl text-muted mb-12 leading-relaxed">
             Kompleksowa demonstracja architektury Fullstack, łącząca wydajność
             Next.js po stronie klienta z solidnością NestJS po stronie serwera.
             Projekt prezentuje najlepsze praktyki w budowaniu nowoczesnych
@@ -43,20 +43,20 @@ export default function NestJSDemoPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 group hover:border-emerald-500/30 transition-colors">
+            <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-emerald-500/30 transition-colors">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Globe className="text-emerald-400" /> Frontend
               </h3>
-              <p className="text-zinc-400 text-sm">
+              <p className="text-muted text-sm">
                 Wykorzystanie Next.js (App Router) dla optymalnego renderowania
                 i SEO. Dynamiczne ładowanie komponentów i płynne przejścia.
               </p>
             </div>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 group hover:border-emerald-500/30 transition-colors">
+            <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-emerald-500/30 transition-colors">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Cpu className="text-emerald-400" /> Backend
               </h3>
-              <p className="text-zinc-400 text-sm">
+              <p className="text-muted text-sm">
                 Skalowalne API oparte na NestJS. Architektura modularna,
                 wstrzykiwanie zależności i pełne wsparcie dla TypeScript.
               </p>
@@ -75,7 +75,7 @@ export default function NestJSDemoPage() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center gap-3 p-4 bg-white/5 rounded-xl border border-white/5"
+                  className="flex items-center gap-3 p-4 bg-surface rounded-xl border border-border-subtle"
                 >
                   <div className="w-2 h-2 rounded-full bg-emerald-400" />
                   <span className="text-zinc-300 text-sm">{item}</span>
@@ -86,7 +86,7 @@ export default function NestJSDemoPage() {
 
           <div className="mt-24 p-12 bg-gradient-to-br from-emerald-500/10 to-transparent rounded-3xl border border-emerald-500/20">
             <h3 className="text-2xl font-bold mb-4">Kod źródłowy</h3>
-            <p className="text-zinc-400 mb-8 max-w-lg">
+            <p className="text-muted mb-8 max-w-lg">
               Architektura została zaprojektowana tak, aby umożliwić łatwą
               rozbudowę o mikrousługi i wspierać rozwój w dużych zespołach
               deweloperskich.
@@ -99,7 +99,7 @@ export default function NestJSDemoPage() {
               >
                 <Globe className="w-4 h-4" /> Zobacz Live Demo
               </a>
-              <button className="px-6 py-3 bg-white/10 text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer">
+              <button className="px-6 py-3 bg-surface-strong text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer">
                 <Code className="w-4 h-4" /> Zobacz kod
               </button>
             </div>

@@ -15,14 +15,14 @@ import Link from "next/link";
 
 export default function PytajnikDBPage() {
   return (
-    <div className="relative min-h-screen bg-black text-white selection:bg-purple-500/30 font-sans mt-20">
+    <div className="relative min-h-screen bg-background text-foreground selection:bg-purple-500/30 font-sans mt-20">
       <Navbar />
       <Scene3D />
 
       <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Powrót do strony głównej
@@ -42,7 +42,7 @@ export default function PytajnikDBPage() {
             </h1>
           </div>
 
-          <p className="text-xl text-zinc-400 mb-12 leading-relaxed">
+          <p className="text-xl text-muted mb-12 leading-relaxed">
             Interaktywna baza danych zaprojektowana dla potrzeb szybkiego
             wyszukiwania i filtrowania ogromnych zbiorów informacji. System
             charakteryzuje się intuicyjnym interfejsem "instant-search" oraz
@@ -50,22 +50,22 @@ export default function PytajnikDBPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10">
+            <div className="p-8 rounded-2xl bg-surface border border-border">
               <div className="flex items-center gap-3 mb-4 text-purple-400">
                 <Search className="w-5 h-5" />
                 <h3 className="font-bold">Instant Search</h3>
               </div>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted">
                 Wyniki wyszukiwania pojawiają się w milisekundach dzięki
                 zaawansowanemu indeksowaniu i optymalizacji zapytań.
               </p>
             </div>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10">
+            <div className="p-8 rounded-2xl bg-surface border border-border">
               <div className="flex items-center gap-3 mb-4 text-cyan-400">
                 <Filter className="w-5 h-5" />
                 <h3 className="font-bold">Filtry Smart</h3>
               </div>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted">
                 Dynamiczne filtrowanie zależne od kontekstu, pozwalające na
                 precyzyjne dotarcie do poszukiwanych rekordów.
               </p>
@@ -83,7 +83,7 @@ export default function PytajnikDBPage() {
             ].map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs font-bold text-zinc-400"
+                className="px-3 py-1 bg-surface border border-border rounded-full text-xs font-bold text-muted"
               >
                 {tech}
               </span>
@@ -92,7 +92,7 @@ export default function PytajnikDBPage() {
 
           <div className="space-y-12">
             <h2 className="text-3xl font-bold flex items-center gap-3">
-              <Code2 className="text-zinc-400" /> Architektura
+              <Code2 className="text-muted" /> Architektura
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
@@ -114,10 +114,10 @@ export default function PytajnikDBPage() {
               ].map((item) => (
                 <div
                   key={item.title}
-                  className={`p-6 border-l-4 ${item.color} bg-white/5`}
+                  className={`p-6 border-l-4 ${item.color} bg-surface`}
                 >
                   <h4 className="font-bold mb-2">{item.title}</h4>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
+                  <p className="text-xs text-subtle leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -125,11 +125,11 @@ export default function PytajnikDBPage() {
             </div>
           </div>
 
-          <div className="mt-24 p-12 border-2 border-dashed border-white/10 rounded-3xl text-center">
+          <div className="mt-24 p-12 border-2 border-dashed border-border rounded-3xl text-center">
             <h3 className="text-xl font-bold mb-4 italic">
               Certyfikowana Wydajność
             </h3>
-            <p className="text-zinc-500 text-sm max-w-md mx-auto">
+            <p className="text-subtle text-sm max-w-md mx-auto">
               Projekt przeszedł rygorystyczne testy obciążeniowe, demonstrując
               stabilność przy tysiącach jednoczesnych zapytań.
             </p>

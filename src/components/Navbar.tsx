@@ -30,13 +30,13 @@ export function Navbar() {
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4",
         scrolled
-          ? "bg-black/50 backdrop-blur-md border-b border-white/10 py-3"
+          ? "bg-background/50 backdrop-blur-md border-b border-border py-3"
           : "bg-transparent",
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="group flex items-center gap-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-lg flex items-center justify-center font-bold text-white group-hover:scale-110 transition-transform">
+          <div className="w-8 h-8 bg-gradient-to-br from-primary to-secondary-deep rounded-lg flex items-center justify-center font-bold text-white group-hover:scale-110 transition-transform">
             CM
           </div>
           <span className="text-xl font-bold tracking-tighter text-white">
@@ -50,23 +50,23 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-zinc-400 hover:text-white transition-colors cursor-pointer"
+              className="text-sm font-medium text-muted hover:text-white transition-colors cursor-pointer"
             >
               {link.name}
             </Link>
           ))}
-          <div className="flex items-center gap-4 border-l border-white/10 pl-8 ml-2">
+          <div className="flex items-center gap-4 border-l border-border pl-8 ml-2">
             <a
               href="https://github.com/potnar"
               target="_blank"
-              className="text-zinc-400 hover:text-white transition-colors cursor-pointer"
+              className="text-muted hover:text-white transition-colors cursor-pointer"
             >
               <Github size={20} />
             </a>
             <a
               href="https://www.linkedin.com/in/mikołaj-cholewa-4b909573/"
               target="_blank"
-              className="text-zinc-400 hover:text-white transition-colors"
+              className="text-muted hover:text-white transition-colors"
             >
               <Linkedin size={20} />
             </a>
@@ -89,7 +89,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-zinc-900 border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-surface-solid border-b border-border overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map((link) => (
@@ -97,12 +97,12 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-lg font-medium text-zinc-400 hover:text-white transition-colors"
+                  className="text-lg font-medium text-muted hover:text-white transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="flex gap-6 pt-4 border-t border-white/10">
+              <div className="flex gap-6 pt-4 border-t border-border">
                 <a
                   href="https://github.com/potnar"
                   target="_blank"
@@ -110,7 +110,7 @@ export function Navbar() {
                 >
                   <Github
                     size={24}
-                    className="text-zinc-400 hover:text-white transition-colors"
+                    className="text-muted hover:text-white transition-colors"
                   />
                 </a>
                 <a
@@ -120,7 +120,7 @@ export function Navbar() {
                 >
                   <Linkedin
                     size={24}
-                    className="text-zinc-400 hover:text-white transition-colors"
+                    className="text-muted hover:text-white transition-colors"
                   />
                 </a>
                 <a
@@ -129,7 +129,7 @@ export function Navbar() {
                 >
                   <Mail
                     size={24}
-                    className="text-zinc-400 hover:text-white transition-colors"
+                    className="text-muted hover:text-white transition-colors"
                   />
                 </a>
               </div>

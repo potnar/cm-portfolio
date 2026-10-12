@@ -17,14 +17,14 @@ import Link from "next/link";
 
 export default function UtmArchitectPage() {
   return (
-    <div className="relative min-h-screen bg-black text-white selection:bg-orange-500/30 font-sans mt-20">
+    <div className="relative min-h-screen bg-background text-foreground selection:bg-orange-500/30 font-sans mt-20">
       <Navbar />
       <Scene3D />
 
       <main className="relative z-10 max-w-4xl mx-auto px-6 py-20 mt-20">
         <Link
           href="/#projects"
-          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-12 group"
+          className="inline-flex items-center gap-2 text-muted hover:text-white transition-colors mb-12 group"
         >
           <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
           Powrót do strony głównej
@@ -44,7 +44,7 @@ export default function UtmArchitectPage() {
             </h1>
           </div>
 
-          <p className="text-xl text-zinc-400 mb-12 leading-relaxed">
+          <p className="text-xl text-muted mb-12 leading-relaxed">
             Kompleksowe rozwiązanie do zarządzania linkami kampanii
             marketingowych. UTM Architect pozwala na szybkie generowanie,
             katalogowanie i walidację parametrów śledzenia, zapewniając spójność
@@ -52,22 +52,22 @@ export default function UtmArchitectPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 group hover:border-orange-500/30 transition-colors">
+            <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-orange-500/30 transition-colors">
               <div className="flex items-center gap-3 mb-4 text-orange-400">
                 <Target className="w-5 h-5" />
                 <h3 className="font-bold">Precyzyjne Trackowanie</h3>
               </div>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted">
                 Eliminacja błędów w nazewnictwie kampanii dzięki predefiniowanym
                 szablonom i walidacji w czasie rzeczywistym.
               </p>
             </div>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 group hover:border-orange-500/30 transition-colors">
+            <div className="p-8 rounded-2xl bg-surface border border-border group hover:border-orange-500/30 transition-colors">
               <div className="flex items-center gap-3 mb-4 text-emerald-400">
                 <Share2 className="w-5 h-5" />
                 <h3 className="font-bold">Łatwe Udostępnianie</h3>
               </div>
-              <p className="text-sm text-zinc-400">
+              <p className="text-sm text-muted">
                 Szybkie kopiowanie gotowych linków lub generowanie kodów QR do
                 użycia w materiałach offline.
               </p>
@@ -98,11 +98,11 @@ export default function UtmArchitectPage() {
               ].map((item, idx) => (
                 <div
                   key={idx}
-                  className="p-6 bg-white/5 rounded-xl border border-white/5"
+                  className="p-6 bg-surface rounded-xl border border-border-subtle"
                 >
                   <div className="text-zinc-300 mb-3">{item.icon}</div>
                   <h4 className="font-bold mb-2">{item.title}</h4>
-                  <p className="text-xs text-zinc-500 leading-relaxed">
+                  <p className="text-xs text-subtle leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function UtmArchitectPage() {
 
           <div className="p-12 bg-gradient-to-br from-orange-500/10 to-transparent rounded-3xl border border-orange-500/20">
             <h3 className="text-2xl font-bold mb-4 italic">Marketing + Tech</h3>
-            <p className="text-zinc-400 mb-8 max-w-lg">
+            <p className="text-muted mb-8 max-w-lg">
               Narzędzie stworzone z myślą o marketerach, którzy potrzebują
               niezawodnego i szybkiego sposobu na zarządzanie strukturą linków
               reklamowych.
@@ -128,7 +128,7 @@ export default function UtmArchitectPage() {
               <a
                 href="https://github.com/potnar"
                 target="_blank"
-                className="px-6 py-3 bg-white/10 text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer"
+                className="px-6 py-3 bg-surface-strong text-white font-bold rounded-lg hover:bg-white/20 transition-colors flex items-center gap-2 cursor-pointer"
               >
                 <Code className="w-4 h-4" /> Przejrzyj Kod
               </a>
