@@ -124,7 +124,7 @@ export function Navbar() {
                   />
                 </a>
                 <a
-                  href="mailto:cholewmikolaj@gmail.com"
+                  href="mailto:cholewamikolaj@gmail.com"
                   className="cursor-pointer"
                 >
                   <Mail

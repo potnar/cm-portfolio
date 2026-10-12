@@ -228,12 +228,12 @@ export default function Home() {
             <h4 className="text-2xl font-bold mb-2">Gotowy na rozmowę?</h4>
             <div className="space-y-1">
               <p className="text-zinc-400 italic">Mikołaj Cholewa</p>
-              <p className="text-zinc-400">cholewmikolaj@gmail.com</p>
+              <p className="text-zinc-400">cholewamikolaj@gmail.com</p>
               <p className="text-zinc-400">+48 516 175 434</p>
             </div>
           </div>
           <a
-            href="mailto:cholewmikolaj@gmail.com"
+            href="mailto:cholewamikolaj@gmail.com"
             className="px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full font-black text-lg hover:scale-105 transition-transform shadow-lg shadow-purple-500/20 cursor-pointer"
           >
             Napisz do mnie
